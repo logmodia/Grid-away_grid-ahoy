@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body.main {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(104, 102, 102);
+}
+
+
+div.grid_container {
+    background-color: rgb(221, 255, 255);
+    width: 60%;
+    height: 680px;
+    margin:0 auto;
+    padding: 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+    
+    background-image: url('./94e917b0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+div.card {
+    background-color: white;
+
+    width: 100;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 5px;
+
+    box-shadow:5px 5px 10px 2px rgb(133, 133, 133);
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+div.img_item {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+p {
+    padding: 5px;
+    font-size: x-small;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+
+    font-size: x-small;
+    font-weight: bold;
+}
+
+a:visited {
+    color: rgb(104, 102, 102);
+}
+
+a:hover {
+    background-color:rgb(82, 167, 247);
+    color: white;
+    border: 1 solid skyblue;
+    border-radius: 5px;
+
+    box-shadow: 3px 3px 5px 3px lightgrey;
+}
+div.hr_line {
+    width: 30px;
+    margin: 0 auto;
+}
