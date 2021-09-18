@@ -171,14 +171,32 @@ div.card8 {
 
 
 @media screen and (max-width: 1270px) {
+    
+    nav {
+        
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+
     div.grid_container {
         height: 1020px;
 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        grid-template-areas: 
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 nav"
+        ;
+
         column-gap: 25px;
         row-gap: 25px;
+
     }
+
 }
 
 @media screen and (max-width: 980px) {
@@ -187,6 +205,16 @@ div.card8 {
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+        grid-template-areas: 
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8"
+        "nav nav"
+        ;
+
         column-gap: 25px;
         row-gap: 25px;
     }
