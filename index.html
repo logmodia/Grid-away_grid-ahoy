@@ -4,14 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>René | Grid away, grid ahoy</title>
 </head>
 <body class="main">
+        
+
+    <header>
+        <div class="head_page">
+            <div class="humburg_container">
+                <a id="humburger" href="#"><i class="fas fa-bars"></i></a>
+            </div>
+
+            <h1 class="head_title">Fast Solution WebTeam</h1>
+            <h3 class="head_title">Fast Solution WebTeam</h3>
+           
+        </div>
+        
+    </header>
+
+    <div id="menu_humb" class="menu_humburger">
+        <ul>
+            <li><a href="#">Home page</a></li>
+            <li><a href="#">Leave a comment</a></li>
+            <li><a href="#">Jobs</a></li>
+        </ul>
+
+    </div>
+ 
 
     <div class="grid_container">
         
-        <nav class="navleft">
+        <nav id="nav1" class="navleft">
             <div class="nav_link"><a class="nav_link" href="#">Find out who we are</a></div>
             <div><hr/></div>
             <div class="nav_link"><a class="nav_link" href="#">Quickly start your<br/> web project</a></div>
@@ -184,6 +209,24 @@
         </div>
 
     </div>
+
+    <script> 
+        var a = document.getElementById("humburger"); 
+        a.onclick = function () { 
+
+            var el = document.getElementById("menu_humb"); 
+           
+            if (el.style.display=="none") { 
+                el.style.display="block";
+
+            }
+            else {
+                el.style.display="none";
+            }
+
+        }
+
+    </script>
 
 </body>
 </html>

@@ -18,7 +18,7 @@ div.grid_container {
     border-radius: 5px;
     box-shadow:5px 5px 10px 2px rgb(133, 133, 133);
 
-    background-image: url('./94e917b0.jpg');
+    background-image: url('./images/img_backgroung.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -68,7 +68,72 @@ nav {
     grid-template-rows: repeat(15, 1fr);
     
 }
+header {
+    background-color: white;
+    border:5px solid white;
+    margin: 10px;
+    height: 60px;
+}
 
+div.head_page {
+    width: 85%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow:5px 5px 10px 2px rgb(133, 133, 133);
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+}
+
+div.menu_humburger {
+    width: 84%;
+    height: 30px;
+    margin: 0 auto;
+    text-align: left;
+    
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    background-color: bisque;
+}
+
+div.menu_humburger ul li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1.head_title, h3.head_title {
+    color: whitesmoke;
+    padding: 0px;
+    margin: 0px;
+    margin: 0 auto;
+}
+
+h3.head_title {
+    display: none;
+}
+
+#menu_humb {
+    display: none;
+}
+
+div.humburg_container {
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+i.fas {
+    color:white;
+    font-size: x-large;
+}
 img {
     width: 60px;
     height: 60px;
@@ -171,7 +236,15 @@ div.card8 {
 
 
 @media screen and (max-width: 1270px) {
-    
+  
+    div.head_page {
+        width: 85%;
+    }
+
+    div.menu_humburger {
+        width: 85%;
+    }
+
     nav {
         
         width: 0px;
@@ -201,6 +274,14 @@ div.card8 {
 
 @media screen and (max-width: 980px) {
     
+    div.head_page {
+        width: 85%;
+    }
+
+    div.menu_humburger {
+        width: 85%;
+    }
+
     nav {
         
         width: 0px;
@@ -232,6 +313,21 @@ div.card8 {
 
 @media screen and (max-width: 768px) {
     
+    div.head_page {
+        width: 85%;
+    }
+
+    div.menu_humburger {
+        width: 85%;
+    }
+
+    h1.head_title {
+        display: none;
+    }
+    h3.head_title {
+        display: block;
+    }
+
     nav {
         
         width: 0px;
