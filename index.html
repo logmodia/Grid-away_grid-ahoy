@@ -211,10 +211,20 @@
     </div>
 
     <script> 
-        var a = document.getElementById("humburger"); 
-        a.onclick = function () { 
+        document.addEventListener('DOMContentLoaded', function() {
+            var el = document.getElementById("menu_humb");
+            el.style.display="none";
+            });
+    
+        </script>
 
-            var el = document.getElementById("menu_humb"); 
+
+    <script> 
+        var a = document.getElementById("humburger"); 
+       
+        a.onclick = function () { 
+            
+            var el = document.getElementById("menu_humb");
            
             if (el.style.display=="none") { 
                 el.style.display="block";
